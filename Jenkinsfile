@@ -3,6 +3,6 @@ node{
      git 'https://github.com/devopstraining4/babyrepo'
   }
   stage('mvn compile and package'){
-     mvn package
+     sh "mvn package"
   }
 }
