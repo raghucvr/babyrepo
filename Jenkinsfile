@@ -7,7 +7,7 @@ node{
 	    sh "${mvnHome}/bin/mvn package"
   }
 	
-	stage('mvn compile and package'){
+	stage('mvn install'){
     	    sh "/opt/apache-maven-3.5.0/bin/mvn deploy"
   }
 }
