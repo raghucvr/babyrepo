@@ -8,6 +8,7 @@ node{
   }
 	
 	stage('mvn install'){
-    	    sh "/opt/apache-maven-3.5.0/bin/mvn deploy"
+    	    def mvnHome = tool name: 'maven2', type: 'maven') 
+	    sh "${mvnHome}/bin/mvn deploy"
   }
 }
